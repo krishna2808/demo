@@ -36,7 +36,7 @@ WORKDIR /app/project-captcha-controller/captcha-backend/
 RUN pip install -r requirements.txt 
 
 
-RUN cp /app/project-captcha-controller/captcha-backend/docker/gunicorn/gunicorn.service /etc/systemd/ && cp /app/project-captcha-controller/project-captcha-controller/docker/gunicorn/gunicorn.socket /etc/systemd/   
+RUN cp /app/project-captcha-controller/captcha-backend/docker/gunicorn/gunicorn.service /etc/systemd/ && cp /app/project-captcha-controller/docker/gunicorn/gunicorn.socket /etc/systemd/   
 
 RUN chmod +x /app/project-captcha-controller/captcha-backend/docker/backend/entry-point/server-entrypoint.sh
 
