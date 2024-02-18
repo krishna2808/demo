@@ -92,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': "captcha",
         'USER': "root",
-        'PASSWORD':" password",
+        'PASSWORD':"password",
         'HOST': "mysql.captcha",
         'PORT': 3306,
     }
