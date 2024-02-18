@@ -54,14 +54,14 @@ services:
         volumes:
           - mysql-container-data:/var/lib/mysql
 
-    nginx:
-      container_name: nginx.webserver.captcha
-      build: nginx/
-      ports:
-        - 80:80
-        - 443:443
-      depends_on:
-        - captcha_backend
+    #nginx:
+    #  container_name: nginx.webserver.captcha
+    #  build: nginx/
+    #  ports:
+    #    - 80:80
+    #    - 443:443
+    #  depends_on:
+    #    - captcha_backend
 
 
 volumes:
